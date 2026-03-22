@@ -40,12 +40,13 @@ export function Hero() {
                     className="flex flex-col sm:flex-row gap-4 pt-4"
                 >
                     <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                        {/*<a href="#contact">
+                        <a href="https://app.blackletter.co.in/">
                             <Button size="lg" className="h-14 rounded-full px-8 bg-primary text-primary-foreground hover:bg-primary/90 font-sans tracking-wide text-sm font-semibold group w-full sm:w-auto">
-                                Request Access
+                                Try It Out
                                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                             </Button>
                         </a>
+                        {/*
                         <a href="#platform">
                             <Button variant="ghost" size="lg" className="h-14 rounded-full px-8 font-sans tracking-wide text-sm font-semibold hover:bg-black/5 w-full sm:w-auto">
                                 View Documentation
