@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import ConditionalThreads from "@/components/ConditionalThreads";
 import SmoothScroll from "@/components/SmoothScroll";
 
@@ -32,6 +33,8 @@ export default function RootLayout({
         className={`${playfair.variable} ${inter.variable} antialiased bg-background text-foreground`}
         suppressHydrationWarning
       >
+
+
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -41,9 +44,11 @@ export default function RootLayout({
           <SmoothScroll>
             <ConditionalThreads />
             {children}
+            <Analytics />
           </SmoothScroll>
         </ThemeProvider>
       </body>
     </html>
   );
 }
+
